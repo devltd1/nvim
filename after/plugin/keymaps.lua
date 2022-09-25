@@ -47,14 +47,17 @@ nnoremap("<leader>gr",":lua vim.lsp.buf.references()<CR>")
 nnoremap("<leader>grn",":lua vim.lsp.buf.rename()<CR>")
 nnoremap("<leader>hh",":lua vim.lsp.buf.hover()<CR>")
 nnoremap("<leader>ca",":lua vim.lsp.buf.code_action()<CR>")
-nnoremap("<leader>gsd",":lua vim.diagnostic.show() <CR>")
+nnoremap("<leader>gsd",":lua vim.diagnostic.sh ow() <CR>")
 
 nnoremap("<leader>ge",":lua vim.diagnostic.goto_next()<CR>")
 nnoremap("<leader>gm",":lua vim.diagnostic.goto_prev()<CR>")
 --nnoremap("<leader>sd",":lua vim.diagnostic.open_float()<CR>")
 --
-nnoremap("<leader>se",":Lspsaga show_line_diagnostics<CR>")
-nnoremap("<leader>ce",":Lspsaga yank_line_diagnostics<CR>")
-nnoremap("<leader>sca",":Lspsaga code_action<CR>")
-nnoremap("<leader>sh",":Lspsaga hover_doc<CR>")
+nnoremap("<leader>gse",":Lspsaga show_line_diagnostics<CR>")
+-- nnoremap("<leader>",":Lspsaga yank_line_diagnostics<CR>")
+nnoremap("<leader>gca",":Lspsaga code_action<CR>")
+nnoremap("<leader>gvh",":Lspsaga hover_doc<CR>")
+
+nmap("<C-n>",":lua require'luasnip'.jump(-1)<Cr>")
+
 
