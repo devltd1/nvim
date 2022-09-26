@@ -45,7 +45,7 @@ return require("packer").startup(function()
 
     -- Colorscheme section
     use("gruvbox-community/gruvbox")
-    --use("folke/tokyonight.nvim")
+    use("folke/tokyonight.nvim")
 
    use("nvim-treesitter/nvim-treesitter", {  run = ":TSUpdate" })
    use('simrat39/rust-tools.nvim')
