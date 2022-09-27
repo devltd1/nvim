@@ -26,12 +26,25 @@ return require("packer").startup(function()
     use("hrsh7th/cmp-nvim-lsp")
     use("hrsh7th/cmp-buffer")
     use("hrsh7th/nvim-cmp")
+    use('hrsh7th/cmp-path')
+    use('hrsh7th/cmp-cmdline')
     use("onsails/lspkind-nvim")
     use("nvim-lua/lsp_extensions.nvim")
     use("glepnir/lspsaga.nvim")
     use("simrat39/symbols-outline.nvim")
     use("L3MON4D3/LuaSnip")
     use("saadparwaiz1/cmp_luasnip")
+    use("hrsh7th/cmp-nvim-lsp-signature-help")
+    -- Plug 'neovim/nvim-lspconfig'
+-- Plug 'hrsh7th/cmp-nvim-lsp'
+-- Plug 'hrsh7th/cmp-buffer'
+-- Plug 'hrsh7th/nvim-cmp'
+-- Plug 'hrsh7th/cmp-path'
+-- Plug 'hrsh7th/cmp-cmdline'
+-- Plug 'onsails/lspkind-nvim'
+-- Plug 'nvim-lua/lsp_extensions.nvim'
+
+
 
     use('tpope/vim-commentary')
 
