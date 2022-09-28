@@ -9,7 +9,10 @@ return require("packer").startup(function()
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
     use("sbdchd/neoformat")
-
+    use {
+        "windwp/nvim-autopairs",
+        config = function() require("nvim-autopairs").setup {} end
+    }
 
     -- TJ created lodash of neovim
     use("nvim-lua/plenary.nvim")
